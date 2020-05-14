@@ -1,0 +1,12 @@
+.heading {
+  font-weight: lighter;
+  letter-spacing: 8px;
+  word-spacing: 2px;
+  font-size: 3.3rem;
+}
+.form-control {
+  border-radius: 0px;
+}
+.form-control:focus {
+  box-shadow: none;
+}
