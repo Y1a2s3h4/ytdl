@@ -10,3 +10,87 @@
 .form-control:focus {
   box-shadow: none;
 }
+.downloadInfo {
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+.rightArrow {
+  width: 4rem;
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+  /* filter: invert(1); */
+}
+.how_to {
+  position: absolute;
+  right: 6rem;
+  top: 1.5rem;
+}
+.avatar {
+  border-radius: 50%;
+  width: 55px;
+  margin-right: 1rem;
+}
+.title {
+  margin: auto 0;
+}
+.t-hover {
+  color: #000000 !important;
+  text-decoration: underline;
+}
+.t-hover:hover {
+  color: #444444 !important;
+}
+.c-background {
+  /* background-color: rgb(194, 194, 194); */
+  border-radius: 15px;
+  /* padding: 15px; */
+}
+.infoIcon {
+  position: relative;
+}
+.tooltip {
+  transition: all 0.3s ease-out;
+  background-color: #303030;
+  border-radius: 10px;
+  padding: 15px 27px 15px;
+  top: -5rem;
+  left: 0rem;
+}
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: 85%;
+  left: 20%;
+  width: 20px;
+  height: 20px;
+  background-color: #303030;
+  transform: rotate(45deg);
+}
+.infoIcon:hover .tooltip {
+  opacity: 1;
+}
+@media (max-width: 574px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .t-hover {
+    font-size: 0.8rem;
+  }
+  .avatar {
+    width: 48px;
+  }
+  .subscribers_count,
+  .total_views,
+  .tags,
+  .video_quality {
+    font-size: 0.9rem;
+  }
+  .infoHead {
+    font-size: 0.8rem;
+  }
+  .tooltip {
+    font-size: 0.7rem;
+    top: -6rem;
+  }
+}

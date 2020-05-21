@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+    <nav className="navbar navbar-expand-lg navbar-light primary-color">
       <div className="container">
-        <Link to="/" class="navbar-brand" href="#">
+        <Link to="/" className="navbar-brand text-dark" href="#">
           YT Downloader
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#basicExampleNav"
@@ -17,14 +17,18 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <Link to="/ytdl_thumbnail" class="nav-link" href="#">
+        <div className="collapse navbar-collapse" id="basicExampleNav">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item active">
+              <Link
+                to="/ytdl_thumbnail"
+                className="nav-link text-dark"
+                href="#"
+              >
                 Download YT Thumbnail
-                <span class="sr-only">(current)</span>
+                <span className="sr-only">(current)</span>
               </Link>
             </li>
           </ul>
