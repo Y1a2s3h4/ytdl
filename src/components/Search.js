@@ -6,12 +6,14 @@ export default class Search extends Component {
   state = {
     input: "",
     data: [],
+    isLoading: false,
   };
   search = (e) => {
     e.preventDefault();
     const { input } = this.state;
+    this.setState({ isLoading: true });
     axios.get(`https://apiytdl.herokuapp.com/v?input=${input}`).then((res) => {
-      this.setState({ data: res.data });
+      this.setState({ data: res.data, isLoading: false });
       console.log(res.data);
     });
   };
@@ -60,7 +62,13 @@ export default class Search extends Component {
             />
           </div>
         </form>
+        {this.state.isLoading && (
+          <center>
+            <Icon name="Loading3" size="100px" />
+          </center>
+        )}
         {this.state.data.map((item) => {
+          const url = item.thumbnail_urls.thumbnails.length - 1;
           return (
             <div className="c-background mt-4">
               <Div
@@ -117,7 +125,7 @@ export default class Search extends Component {
               <br />
               <video
                 controls
-                poster={`${item.thumbnail_urls.thumbnails[4].url}`}
+                poster={item.thumbnail_urls.thumbnails[url].url}
                 style={{ width: "100%", marginBottom: "1rem" }}
               >
                 <source

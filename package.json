@@ -9,15 +9,14 @@
     "@testing-library/user-event": "^7.2.1",
     "atomize": "^1.0.26",
     "axios": "^0.19.2",
-    "file-saver": "^2.0.2",
+    "base64-img": "^1.0.4",
     "react": "^16.13.1",
     "react-atomize": "^1.0.33",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-transition-group": "^4.4.1",
-    "styled-components": "^5.1.0",
-    "videojs-vjsdownload": "^1.0.4"
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

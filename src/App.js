@@ -14,7 +14,6 @@ function App() {
       <Switch>
         <Route path="/" exact component={Search} />
         <Route path="/ytdl_thumbnail" component={YT_Thumbnail} />
-        {/* <Route path="/ytdl_thumbnail/:url" component={Download} /> */}
       </Switch>
     </Router>
   );
