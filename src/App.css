@@ -70,6 +70,14 @@
 .infoIcon:hover .tooltip {
   opacity: 1;
 }
+.download {
+  font-size: 1rem;
+  background-color: #2a98ff;
+  color: white;
+}
+.download:hover {
+  color: white;
+}
 @media (max-width: 574px) {
   .heading {
     font-size: 2rem;
