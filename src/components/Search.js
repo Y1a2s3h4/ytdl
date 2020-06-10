@@ -95,7 +95,7 @@ export default class Search extends Component {
               </h6>
               <h6 className="video_quality">Video Quality: {item.quality}</h6>
               <h6 className="tags">
-                Tags Used for Video: {item.keywords.join(", ")}
+                Tags Used for Video: {item.keywords.join(",")}
               </h6>
               <Div
                 bg="info600"
